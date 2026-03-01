@@ -23,3 +23,6 @@ db_data/
 *.bak
 *.swp
 *~
+
+# --- Database Backups ---
+src/*.sql
