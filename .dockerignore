@@ -1,0 +1,18 @@
+# Ignore git history
+.git
+.gitignore
+
+# Ignore local environment files (they are passed via docker-compose)
+.env
+
+# Ignore local dependencies (we want the container to install them)
+src/vendor
+src/node_modules
+
+# Ignore documentation and scripts
+README.md
+setup.sh
+setup.ps1
+
+# Ignore OS-generated files
+.DS_Store

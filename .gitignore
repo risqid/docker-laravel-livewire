@@ -1,0 +1,25 @@
+# --- Infrastructure Secrets ---
+.env
+
+# --- Docker & System ---
+.docker/
+.DS_Store
+Thumbs.db
+
+# --- Laravel Specific (Mapped from /src) ---
+src/.env
+src/vendor/
+src/node_modules/
+src/public/storage
+src/public/hot
+src/storage/*.key
+src/.phpunit.result.cache
+
+# --- Database Storage ---
+# We ignore the local data folder so you don't push your actual database rows
+db_data/
+
+# --- Temporary & Backup Files ---
+*.bak
+*.swp
+*~
