@@ -8,6 +8,8 @@ services:
         USER_ID: ${USER_ID:-1000}
         GROUP_ID: ${GROUP_ID:-1000}
     container_name: laravel_php
+    ports:
+      - "5173:5173"
     environment:
       - 'COMPOSER_AUTH={"github-oauth": {"github.com": "${GITHUB_TOKEN}"}}'
     volumes:

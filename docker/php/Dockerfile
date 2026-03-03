@@ -16,7 +16,10 @@ RUN apk add --no-cache \
     unzip \
     git \
     curl \
-    icu-dev
+    icu-dev \
+    shadow \
+    nodejs \
+    npm
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo_mysql zip bcmath intl exif pcntl
